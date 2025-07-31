@@ -4,3 +4,7 @@ img {
   object-fit: contain;
   border-radius: 8px; /* optional */
 }
+#logo{
+    width: 5rem;
+    height: auto;
+}
