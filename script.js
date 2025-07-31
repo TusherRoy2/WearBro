@@ -8,4 +8,4 @@ function loader() {
     }
 }
 
-let interval = setInterval(loader, 3000);
+let interval = setInterval(loader, 5000);
