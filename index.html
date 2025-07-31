@@ -73,10 +73,10 @@
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
       <p class="text-gray-600 mb-6">Email us at support@wearbro.com or call 01741207841</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-2 border rounded">
-        <input type="email" placeholder="Your Email" class="w-full p-2 border rounded">
-        <textarea placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
+      <form action="git_msg.php" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded">
+        <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
         <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Send Message</button>
       </form>
     </div>
