@@ -1,0 +1,91 @@
+<!-- WearBro - E-commerce Website Preview Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WearBro | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">WearBro</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#products" class="hover:underline">Products</a>
+        <a href="#cart" class="hover:underline">Cart</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-50 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Discover the Latest Fashion at WearBro</h2>
+    <p class="text-lg mb-6">Stylish. Comfortable. Affordable.</p>
+    <p class="text-lg mb-6">“WearBro – ট্রেন্ডি তুমি, তোমার মতো করে।”</p>
+    <a href="#products" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Shop Now</a>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products" class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-8 text-center">Our Products</h3>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+        <!-- Product Card -->
+        <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+          <img src="images/T-Shirt.jpg" alt="Product" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold">Casual T-Shirt</h4>
+          <p class="text-gray-500">৳450</p>
+          <button class="mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Add to Cart</button>
+        </div>
+        <!-- Repeat product cards -->
+        <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+          <img src="images/Slim Fit Jeans.jpg" alt="Product" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold">Slim Fit Jeans</h4>
+          <p class="text-gray-500">৳1200</p>
+          <button class="mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Add to Cart</button>
+        </div>
+        <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+          <img src="images/Cotton Hoodie.jpg" alt="Product" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold">Cotton Hoodie</h4>
+          <p class="text-gray-500">৳950</p>
+          <button class="mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-6">Your Cart</h3>
+      <p class="text-gray-500">Your cart is empty.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
+      <p class="text-gray-600 mb-6">Email us at support@wearbro.com or call 01741207841</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-2 border rounded">
+        <input type="email" placeholder="Your Email" class="w-full p-2 border rounded">
+        <textarea placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
+        <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white py-6 text-center">
+    <p>&copy; 2025 WearBro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+img {
+  width: 100%;
+  height: 500px; /* or any fixed height you want */
+  object-fit: contain;
+  border-radius: 8px; /* optional */
+}
