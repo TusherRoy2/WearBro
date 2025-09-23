@@ -1,307 +1,236 @@
 <!-- WearBro - E-commerce Website Preview Template -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WearBro | Home</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-white text-gray-900">
-    <div class="pre_loader">
-      <img src="1479.gif" alt="Loading..." />
-      <br>
-        এই সাইটটি বর্তমানে রক্ষণাবেক্ষণাধীন ⚒️ </br> ওয়েবসাইট এর কার্যক্রম সাময়িকভাবে বন্ধ❗
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WearBro | Home</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white text-gray-900">
+  <div class="pre_loader">
+    <img src="1479.gif" alt="Loading..." />
+    <br>
+    এই সাইটটি বর্তমানে রক্ষণাবেক্ষণাধীন ⚒️ </br> ওয়েবসাইট এর কার্যক্রম সাময়িকভাবে বন্ধ❗
+    </h2>
+  </div>
+
+  <div class="app">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white shadow">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <img id="logo" src="logo.png" alt="WearBro" />
+        <nav class="space-x-6">
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#products" class="hover:underline">Products</a>
+          <a href="#cart" class="hover:underline">Cart</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-50 py-16 text-center">
+      <h2 class="text-4xl font-bold mb-4">
+        Discover the Latest Fashion at WearBro
       </h2>
-    </div>
+      <p class="text-lg mb-6">Stylish. Comfortable. Affordable.</p>
+      <p class="text-lg mb-6">“WearBro – Wear like a Pro 🔥”</p>
+      <a href="#products" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Shop Now</a>
+    </section>
 
-    <div class="app">
-      <!-- Header -->
-      <header class="bg-blue-700 text-white shadow">
-        <div
-          class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
-        >
-          <img id="logo" src="logo.png" alt="WearBro" />
-          <nav class="space-x-6">
-            <a href="#home" class="hover:underline">Home</a>
-            <a href="#products" class="hover:underline">Products</a>
-            <a href="#cart" class="hover:underline">Cart</a>
-            <a href="#contact" class="hover:underline">Contact</a>
-          </nav>
-        </div>
-      </header>
+    <!-- Product Section -->
+    <section id="products" class="py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-8 text-center">Our Products</h3>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
 
-      <!-- Hero Section -->
-      <section id="home" class="bg-blue-50 py-16 text-center">
-        <h2 class="text-4xl font-bold mb-4">
-          Discover the Latest Fashion at WearBro
-        </h2>
-        <p class="text-lg mb-6">Stylish. Comfortable. Affordable.</p>
-        <p class="text-lg mb-6">“WearBro – Wear like a Pro 🔥”</p>
-        <a
-          href="#products"
-          class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800"
-          >Shop Now</a
-        >
-      </section>
-
-      <!-- Product Section -->
-      <section id="products" class="py-16">
-        <div class="max-w-7xl mx-auto px-4">
-          <h3 class="text-3xl font-semibold mb-8 text-center">Our Products</h3>
-          <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
-            <!-- Product Card -->
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="black_print.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Print-Cotton</h4>
-              <p class="text-gray-500">৳750</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Print-Cotton"
-                data-price="৳750"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <!-- Repeat product cards -->
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img
-                src="sky_blue_stripe.jpg"
-                alt="Product"
-                class="mb-4 rounded"
-              />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳850</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳850"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="off-white_stripe.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳850</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳850"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="beige_stripe.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳850</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳850"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="check-1.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Check Shirt</h4>
-              <p class="text-gray-500">৳800</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Check Shirt"
-                data-price="৳800"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="check2.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Check Shirt</h4>
-              <p class="text-gray-500">৳800</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Check Shirt"
-                data-price="৳800"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="check-3.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Check Shirt</h4>
-              <p class="text-gray-500">৳800</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Check Shirt"
-                data-price="৳800"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="cream_stripe.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳850</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳850"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="red_stripe.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳850</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳850"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="zik-black.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳750</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳750"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-            <div class="border rounded-xl p-4 shadow hover:shadow-lg">
-              <img src="zik_ash.jpg" alt="Product" class="mb-4 rounded" />
-              <h4 class="text-xl font-semibold">Casual Shirt</h4>
-              <p class="text-gray-500">৳750</p>
-              <p class="text-gray-500">Available Size: M - L - XL</p>
-              <button
-                class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
-                data-title="Casual Shirt"
-                data-price="৳750"
-                data-size="M - L - XL"
-              >
-                <a href="https://wa.me/8801759723483?text=Is%20this%20shirt%20available?" target="_blank">
-                WhatsApp-এ মেসেজ করুন</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Cart Section -->
-      <section id="cart" class="bg-gray-100 py-16">
-        <div class="max-w-4xl mx-auto px-4">
-          <h3 class="text-3xl font-semibold mb-6">Your Cart</h3>
-          <p class="text-gray-500">Your cart is empty.</p>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="py-16">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-          <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
-          <p class="text-gray-600 mb-6">
-            Email us at wearbro2024@gmail.com or call 01759723483
-          </p>
-          <form action="git_msg.php" method="POST" class="space-y-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              class="w-full p-2 border rounded"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              class="w-full p-2 border rounded"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              class="w-full p-2 border rounded"
-            ></textarea>
-            <button
-              class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800"
-            >
-              Send Message
+          <!-- Product Card -->
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="black_print.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Print-Cotton</h4>
+            <p class="text-gray-500">৳750</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Print-Cotton" data-price="৳750" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
             </button>
-          </form>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="sky_blue_stripe.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳850</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳850" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="off-white_stripe.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳850</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳850" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="beige_stripe.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳850</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳850" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="check-1.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Check Shirt</h4>
+            <p class="text-gray-500">৳800</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Check Shirt" data-price="৳800" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="check2.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Check Shirt</h4>
+            <p class="text-gray-500">৳800</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Check Shirt" data-price="৳800" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="check-3.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Check Shirt</h4>
+            <p class="text-gray-500">৳800</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Check Shirt" data-price="৳800" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="cream_stripe.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳850</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳850" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="red_stripe.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳850</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳850" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="zik-black.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳750</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳750" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
+          <div class="border rounded-xl p-4 shadow hover:shadow-lg">
+            <img src="zik_ash.jpg" alt="Product" class="mb-4 rounded" />
+            <h4 class="text-xl font-semibold">Casual Shirt</h4>
+            <p class="text-gray-500">৳750</p>
+            <p class="text-gray-500">Available Size: M - L - XL</p>
+            <button class="whatsapp-btn w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              data-title="Casual Shirt" data-price="৳750" data-size="M - L - XL">
+              WhatsApp-এ মেসেজ করুন
+            </button>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="bg-blue-700 text-white py-6 text-center">
-        <p>&copy; 2025 WearBro. All rights reserved.</p>
-      </footer>
-    </div>
 
-    <!-- ✅ WhatsApp Button Script -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".whatsapp-btn");
+    <!-- Cart Section -->
+    <section id="cart" class="bg-gray-100 py-16">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-6">Your Cart</h3>
+        <p class="text-gray-500">Your cart is empty.</p>
+      </div>
+    </section>
 
-        buttons.forEach(button => {
-          button.addEventListener("click", function () {
-            const title = button.getAttribute("data-title");
-            const price = button.getAttribute("data-price");
-            const size = button.getAttribute("data-size");
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
+        <p class="text-gray-600 mb-6">
+          Email us at wearbro2024@gmail.com or call 01759723483
+        </p>
+        <form action="git_msg.php" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" />
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" />
+          <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
+          <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
 
-            const message = `Hello, I'm interested in the following product:%0A🧥 Product: ${title}%0A💰 Price: ${price}%0A📏 Size: ${size}%0AIs it available?`;
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-6 text-center">
+      <p>&copy; 2025 WearBro. All rights reserved.</p>
+    </footer>
+  </div>
 
-            const phoneNumber = "8801759723483";
-            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  <!-- ✅ WhatsApp Button Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".whatsapp-btn");
 
-            window.open(url, "_blank");
-          });
+      buttons.forEach(button => {
+        button.addEventListener("click", function () {
+          const title = button.getAttribute("data-title");
+          const price = button.getAttribute("data-price");
+          const size = button.getAttribute("data-size");
+
+          const message = `Hello, I'm interested in the following product:%0A🧥 Product: ${title}%0A💰 Price: ${price}%0A📏 Size: ${size}%0AIs it available?`;
+
+          const phoneNumber = "8801759723483";
+          const url = `https://wa.me/${phoneNumber}?text=${message}`;
+
+          window.open(url, "_blank");
         });
       });
-    </script>
-    
-    <script src="script.js"></script>
-  </body>
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
