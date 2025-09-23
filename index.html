@@ -277,7 +277,31 @@
         <p>&copy; 2025 WearBro. All rights reserved.</p>
       </footer>
     </div>
+
+    <!-- ✅ WhatsApp Button Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".whatsapp-btn");
+
+        buttons.forEach(button => {
+          button.addEventListener("click", function () {
+            const title = button.getAttribute("data-title");
+            const price = button.getAttribute("data-price");
+            const size = button.getAttribute("data-size");
+
+            const message = `Hello, I'm interested in the following product:%0A🧥 Product: ${title}%0A💰 Price: ${price}%0A📏 Size: ${size}%0AIs it available?`;
+
+            const phoneNumber = "8801759723483";
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+
+            window.open(url, "_blank");
+          });
+        });
+      });
+    </script>
+    
     <script src="script.js"></script>
   </body>
 </html>
+
 
