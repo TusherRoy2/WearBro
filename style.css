@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
 html {
   font-size: 100%;
@@ -512,6 +513,7 @@ main code {
     overflow: scroll;
   }
 }
+
 
 
 
