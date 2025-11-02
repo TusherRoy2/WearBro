@@ -64,7 +64,7 @@ img {
   color: #fff;
   position: fixed;
   top: 80%;
-  right: -8%;
+  right: 0%;
   z-index: 9999999;
   transition: 0.3s;
 }
@@ -512,3 +512,4 @@ main code {
     overflow: scroll;
   }
 }
+
