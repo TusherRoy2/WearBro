@@ -8,7 +8,7 @@ function loader() {
     }
 }
 
-let interval = setInterval(loader, 1000);
+let interval = setInterval(loader, 4000);
 
 let productCards = document.querySelector(".productCards");
 
@@ -77,5 +77,6 @@ function checkDetails(e) {
   })
   }
 }
+
 
 productList();
