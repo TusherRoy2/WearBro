@@ -1,15 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Stick+No+Bills:wght@200..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
-  text-decoration: none;
   overflow-x: hidden;
 }
 html {
   font-size: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Stick No Bills", sans-serif;
+  overflow: hidden;
 }
 
 img {
@@ -24,6 +34,9 @@ img {
 
 .app {
   display: none;
+  position: relative;
+}
+#app {
   position: relative;
 }
 
@@ -54,25 +67,44 @@ img {
 .active {
   display: block !important;
 }
-
+.navBar{
+  display: none;
+}
+.mobileMenu{
+  display: none;
+}
 .cart-icon {
   border: 1px solid #fff;
   border-radius: 2rem;
+  font-size: 0.8rem;
   width: 6rem;
   height: auto;
   padding: 0.5rem 0.8rem;
   background: #000000da;
   color: #fff;
   position: fixed;
-  top: 80%;
-  right: -4%;
+  top: 70%;
+  right: -4.5%;
   z-index: 9999999;
   transition: 0.3s;
 }
 .cart-icon:hover {
   transform: scale(1.1);
   right: 1%;
-  font-weight: bold;
+}
+
+.scrTop{
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  background: #000000c7;
+  color: #fff;
+  font-size: 1rem;
+  display: none;
+  padding: 1rem .5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
 }
 
 #home {
@@ -105,18 +137,24 @@ img {
   height: auto;
   border-radius: 0;
 }
-.marquee {
+.text-scroller {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  box-sizing: border-box;
+  background: #000; 
+  color: #f5c542; 
+  font-size: 18px;
+  padding: 10px 0;
+  position: relative;
 }
-.marquee span {
+
+.text-scroller p {
   display: inline-block;
-  padding-left: 100%;
-  animation: scroll 10s linear infinite;
+  padding-left: 100%;  
+  animation: scrollText 25s linear infinite;
 }
-@keyframes scroll {
+
+@keyframes scrollText {
   0% {
     transform: translateX(0);
   }
@@ -124,9 +162,10 @@ img {
     transform: translateX(-100%);
   }
 }
+
 .allBtn {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
 }
 .btn {
@@ -136,14 +175,14 @@ img {
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: 2.5rem;
 }
 .btn:hover {
   background: #444;
 }
 
 #buttons {
-  margin: -2.5rem;
+  margin-top: -4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,6 +226,92 @@ img {
 
 /* ! ============= */
 
+.cards{
+  padding: 5rem 1rem;
+}
+.card{
+  transition: .3s;
+}
+.card:hover{
+  box-shadow: 
+  rgba(135, 206, 250, 0.4) 5px 5px,
+  rgba(135, 206, 250, 0.3) 10px 10px,
+  rgba(135, 206, 250, 0.2) 15px 15px,
+  rgba(135, 206, 250, 0.1) 20px 20px,
+  rgba(135, 206, 250, 0.05) 25px 25px;
+}
+
+.offer-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* 🔵 Animation background layer */
+.offer-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, #38bdf8, #3b82f6, #2563eb, #1e40af);
+  background-size: 200% 100%;
+  z-index: -1;
+  transition: all 0.6s ease;
+  animation: gradientMove 4s linear infinite;
+  opacity: 0.9;
+  border-radius: 8px;
+}
+
+/* ✨ Hover effect */
+.offer-btn:hover {
+  color: #000;
+}
+
+.offer-btn:hover::before {
+  left: 0;
+  background-position: right center;
+}
+
+/* 🌈 Gradient wave animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Testimonials img{
+  width: 5rem !important;
+  height: 5rem;
+  border-radius: 50%;
+}
+.testCard{
+  aspect-ratio: 4/3;
+  object-fit: contain;
+}
+.testCard p{
+  height: 3rem;
+}
+
+.whatsapp-btn {
+  grid-column: 1 / 3;
+  margin-top: 0 !important;
+}
 .whatsapp-btn,
 .custom-btn {
   position: relative;
@@ -194,12 +319,13 @@ img {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 14px 28px;
+  padding: 10px 20px;
+  margin-top: 2.5rem;
   background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.5px;
   cursor: pointer;
   overflow: hidden;
@@ -355,7 +481,7 @@ img {
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
 }
 
@@ -409,18 +535,6 @@ img {
   transition: 0.2s;
   font-size: 1.5rem;
 }
-/* .mainProBox::after{
-  content: "\f00d";
-  font-family: "Font Awesome\ 5 Free";
-  font-weight: 900;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  position: absolute;
-  top: 1%;
-  right: 1%;
-  transition: .2s;
-} */
 .mainProBox .fa-solid:hover {
   color: rgb(255, 0, 0);
   transform: scale(1.2);
@@ -470,7 +584,19 @@ main code {
 
 /* ?==================== */
 
-@media (min-width: 980px) {
+@media (max-width: 980px) {
+  .cart-icon {
+    right: -6.5%;
+  }
+  .whatsapp-btn,
+  .custom-btn {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 780px) {
+  .cart-icon {
+    right: -8%;
+  }
 }
 
 @media (max-width: 680px) {
@@ -479,7 +605,10 @@ main code {
   }
   .whatsapp-btn,
   .custom-btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .text-scroller p {
+    font-size: 1rem;
   }
 }
 
@@ -491,6 +620,77 @@ main code {
     padding: 0.2rem;
     font-size: 2.8rem;
   }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navContainer{
+    width: 50% !important;
+  }
+  nav{
+    display: none;
+  }
+  .fa-xmark{
+    display: none;
+    transition: .3s;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 999999999;
+  }
+  .fa-bars-staggered{
+    display: block;
+    transition: .3s;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 999999999;
+  }
+  .fa-xmark:hover{
+    color: #ff0000;   
+  }
+  .navBar{
+    display: block;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2rem;
+  }
+  .mobileMenu{
+    width: 30rem;
+    height: 100vh;
+    padding: 3rem;
+    display: block;
+    background: #000000e8;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: -40rem;
+    z-index: 99999999;
+    transition: .9s;
+  }
+  .mobileMenu ul{}
+  .mobileMenu ul li{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .mobileMenu ul li a{
+    padding: 0 1rem;
+  }
+
+  #buttons {
+    margin-top: -1.5rem;
+  }
+  .allBtn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .whatsapp-btn,
+  .custom-btn {
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -499,6 +699,9 @@ main code {
   }
   #home p {
     font-size: 1rem;
+  }
+  .cart-icon {
+    right: -9.5%;
   }
   .mainProBox {
     margin: auto;
@@ -513,7 +716,3 @@ main code {
     overflow: scroll;
   }
 }
-
-
-
-

@@ -22,7 +22,7 @@
   </head>
 
   <body class="bg-white text-gray-900">
-    <div class="pre_loader">
+    <!-- <div class="pre_loader">
       <img src="1479.gif" alt="Loading..." />
       <br />
       <h2 class="px-24">
@@ -34,16 +34,16 @@
         📦 প্রোডাক্টের তথ্য, সাইজ, ডেলিভারি বা অন্য যেকোনো প্রশ্নে আমরা সবসময়
         পাশে আছি। আপনার সন্তুষ্টিই আমাদের প্রথম অগ্রাধিকার 💕
       </h2>
-    </div>
+    </div> -->
 
-    <div class="app">
+    <div id="app">
       <!-- Header -->
       <header class="bg-blue-700 text-white shadow">
         <div
-          class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+          class="navContainer max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
         >
           <img id="logo" src="logo.png" alt="WearBro" />
-          <nav class="space-x-3 sm:space-x-6">
+          <nav class="space-x-6">
             <a href="/" class="hover:underline">Home</a>
             <a href="about.html" class="hover:underline">About Us</a>
             <a href="product.html" class="hover:underline">Products</a>
@@ -52,15 +52,30 @@
             <a href="#contact" class="hover:underline">Contact</a>
           </nav>
         </div>
+        <div class="navBar">
+          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </header>
 
-      <!-- ?Scroller -->
-      <marquee behavior="scroll" direction="left">
-        <span>
+      <div class="mobileMenu">
+        <ul class="">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="policy.html">Privacy Policy</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- ✅ Modern Scroller -->
+      <div class="text-scroller">
+        <p>
           “আমাদের সেবা সারা বাংলাদেশ জুড়ে ক্যাশ অন ডেলিভারির মাধ্যমে প্রদান করা
           হয়, এবং রয়েছে সহজ ও নির্ভরযোগ্য রিটার্ন ও এক্সচেঞ্জ পলিসি।”
-        </span>
-      </marquee>
+        </p>
+      </div>
 
       <!-- Hero Section -->
       <section id="home" class="bg-blue-50 text-center">
@@ -93,6 +108,8 @@
       <div class="cart-icon cartBtn" onclick="window.location.href='cart.html'">
         🛒 Cart
       </div>
+
+      <a href="#"><i class="scrTop ri-arrow-up-long-line"></i></a>
 
       <!-- Product Section -->
       <section id="products" class="py-16">
