@@ -241,6 +241,41 @@ img {
   rgba(135, 206, 250, 0.05) 25px 25px;
 }
 
+.card h3{
+  color: #fff;
+  text-shadow: 3px 5px 4px rgba(52,162,174,0.6);
+  -webkit-text-stroke: 1px #000;
+}
+.card p{
+  color: #fff;
+  text-shadow: 3px 5px 3px rgba(0,0,0,0.6);
+}
+.Hoodies{
+  background-image: url("Hoodies.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.T_Shirts{
+  background-image: url("T-Shirts.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Oversized{
+  background-image: url("Oversized.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offerBanner{
+  background-image: url("winter_sell.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .offer-btn {
   position: relative;
   overflow: hidden;

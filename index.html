@@ -1,244 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WearBro | Home</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    />
-    <!-- ✅ Owl Carousel CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WearBro | Home</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- ✅ Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-  <body class="bg-white text-gray-900">
-    <!-- ✅ Header -->
-    <header class="bg-blue-700 text-white shadow">
-      <div
-        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
-      >
-        <img id="logo" src="logo.png" alt="WearBro" class="h-12" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <nav class="space-x-6 hidden md:block">
-          <a href="/" class="hover:underline">Home</a>
-          <a href="about.html" class="hover:underline">About Us</a>
-          <a href="product.html" class="hover:underline">Products</a>
-          <a href="policy.html" class="hover:underline">Privacy Policy</a>
-          <a href="cart.html" class="hover:underline">Cart</a>
-          <a href="#contact" class="hover:underline">Contact</a>
-        </nav>
+<body class="bg-white text-gray-900">
+  <!-- ✅ Header -->
+  <header class="bg-blue-700 text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <img id="logo" src="logo.png" alt="WearBro" class="h-12" />
 
-        <div class="navBar md:hidden">
-          <i class="fa-solid fa-bars-staggered text-2xl"></i>
-        </div>
+      <nav class="space-x-6 hidden md:block">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About Us</a>
+        <a href="product.html" class="hover:underline">Products</a>
+        <a href="policy.html" class="hover:underline">Privacy Policy</a>
+        <a href="cart.html" class="hover:underline">Cart</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+
+      <div class="navBar md:hidden">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- ✅ Hero Banner -->
-    <section class="text-center bg-blue-50 py-16 px-4">
-      <h1 class="text-5xl font-bold mb-4">Style That Speaks</h1>
-      <p class="text-lg mb-6">Premium. Trendy. Affordable. Only at WearBro.</p>
+  <!-- ✅ Hero Banner -->
+  <section class="text-center bg-blue-50 py-16 px-4">
+    <h1 class="text-5xl font-bold mb-4">Style That Speaks</h1>
+    <p class="text-lg mb-6">Premium. Trendy. Affordable. Only at WearBro.</p>
 
-      <img src="BG_Banner(final).png" class="mx-auto mb-6" alt="" />
+    <img src="BG_Banner(final).png" class="mx-auto mb-6" alt="" />
 
-      <a
-        href="product.html"
-        class="custom-btn bg-blue-700 text-white px-8 py-3 rounded text-lg hover:bg-blue-800"
-      >
-        Shop Now
-      </a>
-    </section>
+    <a href="product.html" class="custom-btn bg-blue-700 text-white px-8 py-3 rounded text-lg hover:bg-blue-800">
+      Shop Now
+    </a>
+  </section>
 
-    <!-- ✅ Categories -->
-    <section class="py-16">
-      <h2 class="text-4xl font-semibold text-center mb-10">Shop by Category</h2>
+  <!-- ✅ Categories -->
+  <section class="py-16">
+    <h2 class="text-4xl font-semibold text-center mb-10">Shop by Category</h2>
 
-      <div
-        class="cards grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-6xl mx-auto px-4"
-      >
-        <div
-          class="card bg-blue-100 p-6 rounded-xl shadow hover:scale-105 transition"
-        >
-          <h3 class="text-2xl font-semibold mb-2">Hoodies</h3>
-          <p class="text-gray-600 mb-4">Premium Quality Winter Hoodies</p>
-          <a href="product.html" class="text-blue-700 font-semibold"
-            >Explore →</a
-          >
-        </div>
-
-        <div
-          class="card bg-blue-100 p-6 rounded-xl shadow hover:scale-105 transition"
-        >
-          <h3 class="text-2xl font-semibold mb-2">T-Shirts</h3>
-          <p class="text-gray-600 mb-4">Trendy & Comfortable</p>
-          <a href="product.html" class="text-blue-700 font-semibold"
-            >Explore →</a
-          >
-        </div>
-
-        <div
-          class="card bg-blue-100 p-6 rounded-xl shadow hover:scale-105 transition"
-        >
-          <h3 class="text-2xl font-semibold mb-2">Oversized</h3>
-          <p class="text-gray-600 mb-4">Street Style Oversized Fits</p>
-          <a href="product.html" class="text-blue-700 font-semibold"
-            >Explore →</a
-          >
-        </div>
+    <div class="cards grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-6xl mx-auto px-4">
+      <div class="card Hoodies bg-blue-100 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold mb-2">Hoodies</h3>
+        <p class="text-gray-600 mb-4">Premium Quality Winter Hoodies</p>
+        <a href="product.html" class="text-blue-700 font-semibold">Explore →</a>
       </div>
-    </section>
 
-    <!-- ✅ Why Choose Us -->
-    <section class="bg-gray-100 py-16">
-      <h2 class="text-4xl font-semibold text-center mb-10">Why WearBro?</h2>
-
-      <div
-        class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 max-w-6xl mx-auto px-4"
-      >
-        <div class="text-center bg-white p-6 rounded-xl shadow">
-          <i class="ri-truck-line text-4xl text-blue-700 mb-3"></i>
-          <h3 class="text-xl font-semibold">Fast Delivery</h3>
-        </div>
-
-        <div class="text-center bg-white p-6 rounded-xl shadow">
-          <i class="ri-shield-check-line text-4xl text-blue-700 mb-3"></i>
-          <h3 class="text-xl font-semibold">Trusted Quality</h3>
-        </div>
-
-        <div class="text-center bg-white p-6 rounded-xl shadow">
-          <i class="ri-cash-line text-4xl text-blue-700 mb-3"></i>
-          <h3 class="text-xl font-semibold">Cash on Delivery</h3>
-        </div>
-
-        <div class="text-center bg-white p-6 rounded-xl shadow">
-          <i class="ri-exchange-dollar-line text-4xl text-blue-700 mb-3"></i>
-          <h3 class="text-xl font-semibold">Easy Exchange</h3>
-        </div>
+      <div class="card T_Shirts bg-blue-100 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold mb-2">T-Shirts</h3>
+        <p class="text-gray-600 mb-4">Trendy & Comfortable</p>
+        <a href="product.html" class="text-blue-700 font-semibold">Explore →</a>
       </div>
-    </section>
 
-    <!-- ✅ Offers Banner -->
-    <section class="py-16 px-4 text-center bg-blue-700 text-white">
-      <h2 class="text-4xl font-bold mb-4">🔥 Winter Sale is Live!</h2>
-      <p class="text-lg mb-6">Get up to 30% OFF on selected items</p>
-
-      <a href="product.html" class="offer-btn"> Grab Offer → </a>
-    </section>
-
-    <!-- ✅ Testimonials -->
-    <section class="Testimonials py-16">
-      <h2 class="text-4xl font-semibold text-center mb-10">
-        What Customers Say
-      </h2>
-
-      <div class="owl-carousel max-w-4xl mx-auto px-4">
-        <div class="testCard bg-gray-100 p-6 rounded-xl shadow text-center">
-          <p class="text-gray-700 mb-4">
-            "Quality is awesome! Totally worth it."
-          </p>
-          <div class="flex justify-center items-center gap-3">
-            <img
-              src="sakib.jpg"
-              alt="Muhammad Sakib Hossain"
-              class="w-10 h-10 rounded-full object-cover"
-            />
-            <h4 class="font-semibold">Muhammad Sakib Hossain</h4>
-          </div>
-        </div>
-
-        <div class="testCard bg-gray-100 p-6 rounded-xl shadow text-center">
-          <p class="text-gray-700 mb-4">
-            "Delivery was fast and size fits perfect."
-          </p>
-          <div class="flex justify-center items-center gap-3">
-            <img
-              src="rajon.jpg"
-              alt="Rajon Saroar"
-              class="w-10 h-10 rounded-full object-cover"
-            />
-            <h4 class="font-semibold">Rajon Saroar</h4>
-          </div>
-        </div>
-
-        <div class="testCard bg-gray-100 p-6 rounded-xl shadow text-center">
-          <p class="text-gray-700 mb-4">
-            "Their hoodie collection is super premium."
-          </p>
-          <div class="flex justify-center items-center gap-3">
-            <img
-              src="sojib.jpg"
-              alt="Sojib Hossain"
-              class="w-10 h-10 rounded-full object-cover"
-            />
-            <h4 class="font-semibold">Sojib Hossain</h4>
-          </div>
-        </div>
-
-        <!-- চাইলে আরও testimonial card যোগ করতে পারো -->
+      <div class="card Oversized bg-blue-100 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold mb-2">Oversized</h3>
+        <p class="text-gray-600 mb-4">Street Style Oversized Fits</p>
+        <a href="product.html" class="text-blue-700 font-semibold">Explore →</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ✅ Contact -->
-    <section id="contact" class="py-16">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
-        <p class="text-gray-600 mb-6">
-          Email: wearbro2024@gmail.com | Phone: 01759723483
+  <!-- ✅ Why Choose Us -->
+  <section class="bg-gray-100 py-16">
+    <h2 class="text-4xl font-semibold text-center mb-10">Why WearBro?</h2>
+
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 max-w-6xl mx-auto px-4">
+      <div class="text-center bg-white p-6 rounded-xl shadow">
+        <i class="ri-truck-line text-4xl text-blue-700 mb-3"></i>
+        <h3 class="text-xl font-semibold">Fast Delivery</h3>
+      </div>
+
+      <div class="text-center bg-white p-6 rounded-xl shadow">
+        <i class="ri-shield-check-line text-4xl text-blue-700 mb-3"></i>
+        <h3 class="text-xl font-semibold">Trusted Quality</h3>
+      </div>
+
+      <div class="text-center bg-white p-6 rounded-xl shadow">
+        <i class="ri-cash-line text-4xl text-blue-700 mb-3"></i>
+        <h3 class="text-xl font-semibold">Cash on Delivery</h3>
+      </div>
+
+      <div class="text-center bg-white p-6 rounded-xl shadow">
+        <i class="ri-exchange-dollar-line text-4xl text-blue-700 mb-3"></i>
+        <h3 class="text-xl font-semibold">Easy Exchange</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Offers Banner -->
+  <section class="offerBanner py-16 px-4 text-center bg-blue-700 text-white">
+    <h2 class="text-4xl font-bold mb-4">🔥 Winter Sale is Live!</h2>
+    <p class="text-lg mb-6">Get up to 30% OFF on selected items</p>
+
+    <a href="product.html" class="offer-btn"> Grab Offer → </a>
+  </section>
+
+  <!-- ✅ Testimonials -->
+  <section class="Testimonials py-16">
+    <h2 class="text-4xl font-semibold text-center mb-10">
+      What Customers Say
+    </h2>
+
+    <div class="owl-carousel max-w-4xl mx-auto px-4">
+      <div class="testCard bg-gray-100 p-6 rounded-xl shadow text-center">
+        <p class="text-gray-700 mb-4">
+          "Quality is awesome! Totally worth it."
         </p>
-
-        <form action="git_msg.php" method="POST" class="space-y-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            class="w-full p-2 border rounded"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            class="w-full p-2 border rounded"
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            class="w-full p-2 border rounded"
-          ></textarea>
-
-          <button
-            class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800"
-          >
-            Send Message
-          </button>
-        </form>
+        <div class="flex justify-center items-center gap-3">
+          <img src="sakib.jpg" alt="Muhammad Sakib Hossain" class="w-10 h-10 rounded-full object-cover" />
+          <h4 class="font-semibold">Muhammad Sakib Hossain</h4>
+        </div>
       </div>
-    </section>
 
-    <!-- ✅ Footer -->
-    <footer class="bg-blue-700 text-white py-6 text-center">
-      <p>&copy; 2025 WearBro. All rights reserved.</p>
-    </footer>
+      <div class="testCard bg-gray-100 p-6 rounded-xl shadow text-center">
+        <p class="text-gray-700 mb-4">
+          "Delivery was fast and size fits perfect."
+        </p>
+        <div class="flex justify-center items-center gap-3">
+          <img src="rajon.jpg" alt="Rajon Saroar" class="w-10 h-10 rounded-full object-cover" />
+          <h4 class="font-semibold">Rajon Saroar</h4>
+        </div>
+      </div>
 
-    <!-- ✅ Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <div class="testCard bg-gray-100 p-6 rounded-xl shadow text-center">
+        <p class="text-gray-700 mb-4">
+          "Their hoodie collection is super premium."
+        </p>
+        <div class="flex justify-center items-center gap-3">
+          <img src="sojib.jpg" alt="Sojib Hossain" class="w-10 h-10 rounded-full object-cover" />
+          <h4 class="font-semibold">Sojib Hossain</h4>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
-  </body>
+      <!-- চাইলে আরও testimonial card যোগ করতে পারো -->
+    </div>
+  </section>
+
+  <!-- ✅ Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
+      <p class="text-gray-600 mb-6">
+        Email: wearbro2024@gmail.com | Phone: 01759723483
+      </p>
+
+      <form action="git_msg.php" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" />
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" />
+        <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
+
+        <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-blue-700 text-white py-6 text-center">
+    <p>&copy; 2025 WearBro. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
