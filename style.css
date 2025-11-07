@@ -67,10 +67,10 @@ img {
 .active {
   display: block !important;
 }
-.navBar{
+.navBar {
   display: none;
 }
-.mobileMenu{
+.mobileMenu {
   display: none;
 }
 .cart-icon {
@@ -93,14 +93,14 @@ img {
   right: 1%;
 }
 
-.scrTop{
+.scrTop {
   border: 1px solid #ccc;
   border-radius: 1rem;
   background: #000000c7;
   color: #fff;
   font-size: 1rem;
   display: none;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -141,8 +141,8 @@ img {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: #000; 
-  color: #f5c542; 
+  background: #000;
+  color: #f5c542;
   font-size: 18px;
   padding: 10px 0;
   position: relative;
@@ -150,7 +150,7 @@ img {
 
 .text-scroller p {
   display: inline-block;
-  padding-left: 100%;  
+  padding-left: 100%;
   animation: scrollText 25s linear infinite;
 }
 
@@ -226,50 +226,70 @@ img {
 
 /* ! ============= */
 
-.cards{
+.cards {
   padding: 5rem 1rem;
 }
-.card{
-  transition: .3s;
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
 }
-.card:hover{
-  box-shadow: 
-  rgba(135, 206, 250, 0.4) 5px 5px,
-  rgba(135, 206, 250, 0.3) 10px 10px,
-  rgba(135, 206, 250, 0.2) 15px 15px,
-  rgba(135, 206, 250, 0.1) 20px 20px,
-  rgba(135, 206, 250, 0.05) 25px 25px;
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.55)
+  );
+  z-index: 1;
+}
+.card:hover {
+  box-shadow: rgba(135, 206, 250, 0.4) 5px 5px,
+    rgba(135, 206, 250, 0.3) 10px 10px, rgba(135, 206, 250, 0.2) 15px 15px,
+    rgba(135, 206, 250, 0.1) 20px 20px, rgba(135, 206, 250, 0.05) 25px 25px;
+}
+.card * {
+  position: relative;
+  z-index: 2;
 }
 
-.card h3{
-  color: #fff;
-  text-shadow: 3px 5px 4px rgba(52,162,174,0.6);
-  -webkit-text-stroke: 1px #000;
+.card h3 {
+  color: #f5faff; /* soft white with slight blue tint */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.65), 0px 4px 8px rgba(0, 0, 0, 0.45);
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.35);
+  font-weight: 700;
 }
-.card p{
-  color: #fff;
-  text-shadow: 3px 5px 3px rgba(0,0,0,0.6);
+
+.card p {
+  color: #e9f1ff; /* softer light blue-white */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6), 0px 4px 6px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
 }
-.Hoodies{
+.Hoodies {
   background-image: url("Hoodies.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.T_Shirts{
+.T_Shirts {
   background-image: url("T-Shirts.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.Oversized{
+.Oversized {
   background-image: url("Oversized.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.offerBanner{
+.offerBanner {
   background-image: url("winter_sell.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -330,19 +350,18 @@ img {
   }
 }
 
-.Testimonials img{
+.Testimonials img {
   width: 5rem !important;
   height: 5rem;
   border-radius: 50%;
 }
-.testCard{
+.testCard {
   aspect-ratio: 4/3;
   object-fit: contain;
 }
-.testCard p{
+.testCard p {
   height: 3rem;
 }
-
 
 .whatsapp-btn {
   grid-column: 1 / 3;
@@ -656,42 +675,42 @@ main code {
     padding: 0.2rem;
     font-size: 2.8rem;
   }
-  header{
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .navContainer{
+  .navContainer {
     width: 50% !important;
   }
-  nav{
+  nav {
     display: none;
   }
-  .fa-xmark{
+  .fa-xmark {
     display: none;
-    transition: .3s;
+    transition: 0.3s;
     font-size: 2rem;
     position: relative;
     z-index: 999999999;
   }
-  .fa-bars-staggered{
+  .fa-bars-staggered {
     display: block;
-    transition: .3s;
+    transition: 0.3s;
     font-size: 2rem;
     position: relative;
     z-index: 999999999;
   }
-  .fa-xmark:hover{
-    color: #ff0000;   
+  .fa-xmark:hover {
+    color: #ff0000;
   }
-  .navBar{
+  .navBar {
     width: 50%;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 2rem;
   }
-  .mobileMenu{
+  .mobileMenu {
     width: 30rem;
     height: 100vh;
     padding: 3rem;
@@ -704,12 +723,12 @@ main code {
     z-index: 99999999;
     transition: right 0.3s ease;
   }
-  .mobileMenu ul li{
+  .mobileMenu ul li {
     margin: 2rem 0;
     font-size: 1.2rem;
     cursor: pointer;
   }
-  .mobileMenu ul li a{
+  .mobileMenu ul li a {
     padding: 0 1rem;
   }
 
@@ -724,6 +743,9 @@ main code {
   .whatsapp-btn,
   .custom-btn {
     margin-top: 0 !important;
+  }
+  .card{
+    height: 15rem;
   }
 }
 
@@ -749,10 +771,8 @@ main code {
     align-items: center;
     overflow: scroll;
   }
-  .Testimonials img{
-  width: 4rem !important;
-  height: 4rem;
+  .Testimonials img {
+    width: 4rem !important;
+    height: 4rem;
+  }
 }
-}
-
-
