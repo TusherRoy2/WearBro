@@ -53,11 +53,12 @@ function productList() {
       </div>
 
       <!-- Product Card -->
-      <div class="mainPro border rounded-xl p-4 shadow hover:shadow-lg">
+      <div class="product-card mainPro border rounded-xl p-4 shadow hover:shadow-lg">
         <img src="${ele.image}" alt="Product" class="mb-4 rounded" />
         <h4 class="text-xl font-semibold">${ele.name}</h4>
         <p class="text-gray-500">৳${ele.price.discount_price}</p>
-        <p class="text-gray-500">Available Size: ${ele.available_sizes}</p>
+        <span class="text-gray-500">${ele.type}</span> / <span class="text-gray-500">${ele.gender}</span> / <span class="text-gray-500">${ele.category}</span>
+        <h3 class="text-gray-500">Brand: ${ele.brand}</h3>
 
         <div class="allBtn">
           <button class="custom-btn w-full bg-blue-700 text-white rounded hover:bg-blue-800" onclick="checkDetails(this)">
@@ -150,4 +151,78 @@ document.addEventListener("DOMContentLoaded", () => {
       scroller.style.animationPlayState = "running";
     });
   }
+});
+
+
+
+// ?Search Filter
+
+function filterProducts(query) {
+    const productCards = document.querySelectorAll('.product-card');
+    const noResultsMessage = document.getElementById('noResultsMessage');
+    const normalizedQuery = query.toLowerCase().trim();
+
+    let productsFound = false;
+
+    productCards.forEach(card => {
+        
+        // ✅ আপডেট: h4 সহ পুরো কার্ডের টেক্সট সংগ্রহ করা হচ্ছে
+        // এটি পণ্যের নাম, বর্ণনা, মূল্য, এবং কার্ডের ভেতরের অন্যান্য টেক্সট কভার করবে
+      const cardText = card.textContent.toLowerCase();
+      console.log(cardText);
+
+        // 1. ম্যাচিং চেক: কার্ডের ভেতরের যেকোনো টেক্সট-এর সাথে কোয়েরি মিলছে কি না
+        //    বা কোয়েরি ফাঁকা হলে (সব দেখানো হবে)
+        if (cardText.includes(normalizedQuery) || normalizedQuery === "") {
+            card.style.display = 'block'; 
+            productsFound = true;
+        } else {
+            card.style.display = 'none'; // লুকিয়ে রাখো
+        }
+    });
+
+    // 2. কোনো পণ্য না পাওয়া গেলে ইউজারকে তা জানানো
+    if (!productsFound && normalizedQuery !== "") {
+        noResultsMessage.style.display = 'block';
+    } else {
+        noResultsMessage.style.display = 'none';
+    }
+}
+
+// ইভেন্ট লিসেনার সেট আপ করা (আগের মতোই থাকবে)
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('productSearchInput');
+    const searchButton = document.getElementById('productSearchButton');
+
+    // সার্চ বাটন ক্লিক
+    if (searchButton) {
+        searchButton.addEventListener('click', () => {
+            filterProducts(searchInput.value);
+        });
+    }
+
+    // ইনপুট বক্সে টাইপ করার সাথে সাথে ফিল্টারিং
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            filterProducts(searchInput.value);
+        });
+        
+        // 'Enter' কী প্রেস ইভেন্ট
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                filterProducts(searchInput.value);
+            }
+        });
+    }
+    
+    // পেজ লোডের সময় URL query parameter থাকলে ফিল্টারিং করা
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialQuery = urlParams.get('search');
+    
+    if (initialQuery) {
+        searchInput.value = initialQuery; 
+        filterProducts(initialQuery);     
+    } else {
+        filterProducts(""); 
+    }
 });

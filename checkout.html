@@ -1,10 +1,9 @@
-<!-- WearBro - E-commerce Website Preview Template -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WearBro | Home</title>
+    <title>WearBro | Checkout</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -22,29 +21,16 @@
   </head>
 
   <body class="bg-white text-gray-900">
-    <!-- <div class="pre_loader">
-      <img src="1479.gif" alt="Loading..." />
-      <br />
-      <h2 class="px-24">
-        ✨ WearBro-তে আপনাকে আন্তরিক স্বাগতম! 🌸 <br />
-        আমাদের সংগ্রহ থেকে আপনার পছন্দের যেকোনো প্রোডাক্ট সম্পর্কে বিস্তারিত
-        জানতে চাইলে, <br />
-        নিচের <code>“WhatsApp-এ মেসেজ করুন”</code> বাটনে ক্লিক করুন ✅ <br />
-
-        📦 প্রোডাক্টের তথ্য, সাইজ, ডেলিভারি বা অন্য যেকোনো প্রশ্নে আমরা সবসময়
-        পাশে আছি। আপনার সন্তুষ্টিই আমাদের প্রথম অগ্রাধিকার 💕
-      </h2>
-    </div> -->
-
     <div id="app">
-      <!-- Header -->
-      <header class="bg-blue-700 text-white shadow">
+      <header class="custom_bg text-white shadow">
         <div
           class="navContainer max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
         >
-          <img id="logo" src="logo.png" alt="WearBro" />
-          <nav class="space-x-6">
-            <a href="index.html" class="hover:underline">Home</a>
+          <a href="index.html"
+            ><img id="logo" src="logo.png" alt="WearBro"
+          /></a>
+          <nav class="space-x-6 hidden md:flex">
+            <a href="/" class="hover:underline">Home</a>
             <a href="about.html" class="hover:underline">About Us</a>
             <a href="product.html" class="hover:underline">Products</a>
             <a href="policy.html" class="hover:underline">Privacy Policy</a>
@@ -60,7 +46,7 @@
 
       <div class="mobileMenu">
         <ul class="">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="product.html">Products</a></li>
           <li><a href="policy.html">Privacy Policy</a></li>
@@ -69,7 +55,6 @@
         </ul>
       </div>
 
-      <!-- ✅ Modern Scroller -->
       <div class="text-scroller">
         <p>
           “আমাদের সেবা সারা বাংলাদেশ জুড়ে ক্যাশ অন ডেলিভারির মাধ্যমে প্রদান করা
@@ -77,126 +62,241 @@
         </p>
       </div>
 
-      <!-- Hero Section -->
-      <section id="home" class="bg-blue-50 text-center">
-        <p class="text-lg mb-6">
-          👑Forget models — our customers ARE the blueprint.
-        </p>
+      <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-10">Checkout</h2>
 
-        <h2 class="text-6xl font-bold mb-4">
-          Discover the Latest Fashion at WearBro
-        </h2>
-        <img src="BG_Banner(final).png" alt="" />
-
-        <p class="text-lg mb-6">
-          Stylish. Comfortable. Affordable. “WearBro – Wear like a Pro 🔥”
-        </p>
-      </section>
-
-      <section id="buttons">
-        <a
-          href="#products"
-          class="custom-btn bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800"
-          >Checkout
-        </a>
-
-        <div class="SBtn">
-          <a href="#products" class="ri-arrow-down-long-line"></a>
-        </div>
-      </section>
-
-      <a href="#"><i class="scrTop ri-arrow-up-long-line"></i></a>
-
-      <div class="checkContainer">
-        <h2>Checkout</h2>
-        <form id="checkoutForm">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="number"
-            name="phone"
-            placeholder="Phone Number"
-            required
-          />
-          <textarea
-            name="address"
-            placeholder="Full Address"
-            required
-          ></textarea>
-          <button type="submit" class="btn">Place Order</button>
-        </form>
-      </div>
-
-      <!-- Contact Section -->
-      <section id="contact" class="py-16">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-          <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
-          <p class="text-gray-600 mb-6">
-            Email us at wearbro2024@gmail.com or call 01759723483
-          </p>
-          <form action="git_msg.php" method="POST" class="space-y-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              class="w-full p-2 border rounded"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              class="w-full p-2 border rounded"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              class="w-full p-2 border rounded"
-            ></textarea>
-            <button
-              class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800"
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div
+              class="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-200"
             >
-              Send Message
-            </button>
-          </form>
+              <h3 class="text-2xl font-semibold mb-6 pb-3 custom_txt border-b">
+                Shipping Information
+              </h3>
+
+              <form id="checkoutForm" class="space-y-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name (সম্পূর্ণ নাম)"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <input
+                  type="number"
+                  name="phone"
+                  placeholder="Phone Number (ফোন নম্বর)"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <textarea
+                  name="address"
+                  placeholder="Full Address (সম্পূর্ণ ঠিকানা: বাসা, রাস্তা, এলাকা, শহর)"
+                  rows="3"
+                  required
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+
+                <div class="pt-4 border-t mt-6">
+                  <h4 class="text-xl font-semibold mb-3">
+                    Payment Method (পেমেন্ট পদ্ধতি)
+                  </h4>
+                  <div
+                    class="bg-gray-100 p-4 rounded-lg flex items-center shadow-inner"
+                  >
+                    <input
+                      type="radio"
+                      id="cod"
+                      name="payment_method"
+                      value="COD"
+                      checked
+                      class="mr-3 w-5 h-5 text-blue-600 focus:ring-blue-500"
+                    />
+                    <label for="cod" class="text-gray-800 font-medium text-lg">
+                      Cash On Delivery (ক্যাশ অন ডেলিভারি)
+                    </label>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full custom_bg text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity mt-6 text-xl shadow-md"
+                >
+                  Place Order (অর্ডার করুন)
+                </button>
+              </form>
+            </div>
+
+            <div
+              class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg border border-gray-200 lg:sticky lg:top-4 h-fit"
+            >
+              <h3 class="text-2xl font-semibold mb-6 pb-3 custom_txt border-b">
+                Your Order Summary
+              </h3>
+
+              <div id="cartSummary" class="space-y-4">
+                <div id="product-list-container"></div>
+
+                <div class="space-y-3 pt-4 border-t-2 border-blue-100">
+                  <div class="flex justify-between text-gray-700">
+                    <span>Subtotal:</span>
+                    <span id="subtotal-display">৳0</span>
+                  </div>
+                  <div class="flex justify-between text-gray-700">
+                    <span>Delivery Charge:</span>
+                    <span id="shipping-display">৳100</span>
+                  </div>
+                  <div
+                    class="flex justify-between text-2xl font-bold pt-3 custom_txt border-t"
+                  >
+                    <span>Total Payable:</span>
+                    <span id="total-display">৳100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer class="bg-blue-700 text-white py-6 text-center">
+      <section id="contact" class="py-16"></section>
+
+      <footer class="custom_bg text-white py-6 text-center">
         <p>&copy; 2025 WearBro. All rights reserved.</p>
       </footer>
     </div>
 
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyg9l82JuOHKdmg8n08X0pX6jDBTtpcDTz53-teB_aSV8cT4nrSWapbRETnYLk3-gtR/exec"; // এখানে তোমার Google Apps Script URL বসাও
+        "https://script.google.com/macros/s/AKfycbz7fgOkhnZ99dJgFaiJu7i70pP1LokCNstGOwSV29DD4yxQGS1RsSxhjJi15idrJrx4/exec"; // আপনার Google Apps Script URL এটিই থাকবে
 
+      const SHIPPING_COST = 100; // আপনার ডেলিভারি চার্জ
+
+      // ✅ ফাংশন ১: কার্ট সামারি ডিসপ্লে করা
+      function displayCartSummary() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const productListContainer = document.getElementById(
+          "product-list-container"
+        );
+
+        if (!productListContainer) return;
+        productListContainer.innerHTML = ""; // পূর্বের কন্টেন্ট মুছে ফেলা
+
+        let subtotal = 0;
+
+        if (cart.length === 0) {
+          productListContainer.innerHTML =
+            '<p class="text-red-500 font-medium">Your cart is empty!</p>';
+          subtotal = 0;
+        } else {
+          cart.forEach((item) => {
+            const itemTotal = item.price * (item.quantity || 1);
+            subtotal += itemTotal;
+
+            const itemHtml = `
+                      <div class="flex justify-between items-center py-2 border-b">
+                          <span class="text-gray-700 font-medium">
+                              ${item.name} (x${item.quantity || 1})
+                          </span>
+                          <span class="font-semibold text-gray-800">৳${itemTotal.toLocaleString(
+                            "en-IN"
+                          )}</span>
+                      </div>
+                  `;
+            productListContainer.innerHTML += itemHtml;
+          });
+        }
+
+        const totalPayable = subtotal + SHIPPING_COST;
+
+        // ডিসপ্লে আপডেট করা
+        document.getElementById(
+          "subtotal-display"
+        ).textContent = `৳${subtotal.toLocaleString("en-IN")}`;
+        document.getElementById(
+          "shipping-display"
+        ).textContent = `৳${SHIPPING_COST}`;
+        document.getElementById(
+          "total-display"
+        ).textContent = `৳${totalPayable.toLocaleString("en-IN")}`;
+      }
+
+      // ✅ ফাংশন ২: অর্ডার সাবমিট করা
       document
         .getElementById("checkoutForm")
-        .addEventListener("submit", (e) => {
+        .addEventListener("submit", async (e) => {
+          // async যোগ করা হয়েছে
           e.preventDefault();
 
-          // LocalStorage থেকে কার্ট ডেটা নেওয়া
-          const cart = JSON.parse(localStorage.getItem("cart")) || [];
-          const productNames = cart.map((item) => item.name).join(", ");
-          const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+          const submitButton = e.target.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
 
-          // ফর্ম ডেটা তৈরি করা
-          const formData = new FormData(e.target);
-          formData.append("products", productNames);
-          formData.append("total", totalPrice);
+          // লোডিং স্টেট সেট করা
+          submitButton.textContent = "Processing... ⏳";
+          submitButton.disabled = true;
 
-          // Google Sheet এ পাঠানো
-          fetch(scriptURL, { method: "POST", body: formData })
-            .then((res) => {
-              localStorage.removeItem("cart");
-              window.location.href = "thankyou.html";
-            })
-            .catch((err) => alert("Error: " + err.message));
+          try {
+            // LocalStorage থেকে কার্ট ডেটা নেওয়া
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            if (cart.length === 0) {
+              alert(
+                "Your cart is empty. Please add products before placing an order."
+              );
+              submitButton.textContent = originalButtonText;
+              submitButton.disabled = false;
+              return;
+            }
+
+            // পণ্যের নাম এবং মোট মূল্য গণনা করা (Google Sheet-এর জন্য)
+            const productNames = cart
+              .map((item) => `${item.name} (Qty: ${item.quantity || 1})`)
+              .join(", ");
+            const totalPrice = cart.reduce(
+              (sum, item) => sum + item.price * (item.quantity || 1),
+              0
+            );
+            const totalPayableWithShipping = totalPrice + SHIPPING_COST; // ডেলিভারি চার্জ যোগ করা হয়েছে
+
+            // ফর্ম ডেটা তৈরি করা
+            const formData = new FormData(e.target);
+            formData.append("products", productNames);
+            formData.append("subtotal", totalPrice); // Subtotal পাঠানো হলো
+            formData.append("shipping", SHIPPING_COST); // Shipping cost পাঠানো হলো
+            formData.append("total", totalPayableWithShipping); // মোট মূল্য পাঠানো হলো
+            formData.append("dateTime", new Date().toLocaleString()); // সময় যোগ করা
+
+            // Google Sheet এ পাঠানো
+            const response = await fetch(scriptURL, {
+              method: "POST",
+              body: formData,
+              mode: "no-cors",
+            });
+
+            // ধরে নেওয়া হলো fetch সফল হয়েছে
+
+            localStorage.removeItem("cart");
+            window.location.href = "thankyou.html";
+          } catch (err) {
+            // NetworkError (CORS) এখানে ধরা পড়বে
+            alert(
+              "Order submission failed. Please ensure you are online and refresh the page. Details: " +
+                err.message
+            );
+            console.error("Fetch Error:", err);
+          } finally {
+            // লোডিং স্টেট রিসেট করা
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
+          }
         });
+
+      // পেজ লোড হওয়ার সাথে সাথে কার্ট সামারি দেখানোর জন্য কল করা হলো
+      document.addEventListener("DOMContentLoaded", displayCartSummary);
     </script>
 
     <script src="products.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
-
