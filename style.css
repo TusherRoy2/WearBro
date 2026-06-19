@@ -294,6 +294,12 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.Shirts {
+  background-image: url("Shirts.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .T_Shirts {
   background-image: url("T-Shirts.webp");
   background-position: center;
