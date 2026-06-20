@@ -41,6 +41,7 @@ function productList() {
             </em>
             <p class="text-gray-500">Category: ${ele.category}</p>
             <p class="text-gray-500">Type: ${ele.type}</p>
+            <p class="text-gray-500">Colour: ${ele.color}</p>
             <p class="text-gray-500">Available Size: ${ele.available_sizes}</p>
             <p class="text-gray-500">Features: ${ele.features}</p>
             <p class="text-gray-500">For: ${ele.gender}</p>
