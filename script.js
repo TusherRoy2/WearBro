@@ -58,7 +58,7 @@ function productList() {
         <img src="${ele.image}" alt="Product" class="mb-4 rounded" />
         <h4 class="text-xl font-semibold">${ele.name}</h4>
         <p class="text-gray-500">৳${ele.price.discount_price}</p>
-        <span class="text-gray-500">${ele.type}</span> / <span class="text-gray-500">${ele.gender}</span> / <span class="text-gray-500">${ele.category}</span>
+        <span class="text-gray-500">${ele.type}</span> / <span class="text-gray-500">${ele.color}</span> / <span class="text-gray-500">${ele.gender}</span> / <span class="text-gray-500">${ele.category}</span>
         <h3 class="text-gray-500">Brand: ${ele.brand}</h3>
 
         <div class="allBtn">
