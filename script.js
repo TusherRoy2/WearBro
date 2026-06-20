@@ -23,8 +23,9 @@ let productData = typeof data !== "undefined" ? data.data : [];
 function productList() {
   if (!productCards || !productData.length) return;
 
-  productCards.innerHTML = `${productData
-    .map((ele) => {
+  productCards.innerHTML = `${[...productData]
+  .reverse()
+  .map((ele) => {
       return `
       <div class="mainProBox">
         <i class="fa-solid fa-circle-xmark"></i>
