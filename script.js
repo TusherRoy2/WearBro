@@ -36,7 +36,7 @@ function productList() {
             <h4 class="text-2xl font-semibold">Name: ${ele.name}</h4>
             <em class="text-gray-500">
               Price: ৳${ele.price.discount_price} - 
-              <del class="text-gray-500">৳1250</del>
+              <del class="text-gray-500">৳${ele.price.regular_price}</del>
             </em>
             <p class="text-gray-500">Category: ${ele.category}</p>
             <p class="text-gray-500">Type: ${ele.type}</p>
